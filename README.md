@@ -11,6 +11,8 @@ Go Sharm is a smart tourism platform designed to digitally transform the tourism
 
 The platform simplifies tourism discovery, booking, and service management while empowering local businesses with digital exposure.
 
+------------------------------------------------------------------------------------------------>
+
 Problem Statement
 
 Tourists often face:
@@ -22,6 +24,7 @@ Fragmented booking experiences across multiple platforms
 Limited access to real-time offers and local recommendations
 
 Service providers also lack a centralized digital platform to showcase their services.
+------------------------------------------------------------------------------------------------>
 
 Solution
 
@@ -37,6 +40,8 @@ Deals, discounts, and real-time updates
 
 Dashboards for tourism service providers
 
+------------------------------------------------------------------------------------------------>
+
 Target Users
 
 Tourists (Local & International)
@@ -44,6 +49,8 @@ Tourists (Local & International)
 Tourism Service Providers (Hotels, Restaurants, Activity Organizers)
 
 Platform Administrators
+
+------------------------------------------------------------------------------------------------>
 
 Core Features
 Tourist
@@ -68,6 +75,8 @@ Booking Management
 
 Analytics Dashboard
 
+------------------------------------------------------------------------------------------------>
+
 Admin
 
 User & Provider Management
@@ -75,6 +84,8 @@ User & Provider Management
 Content Moderation
 
 Reports & Insights
+
+------------------------------------------------------------------------------------------------>
 
 System Architecture
 
@@ -100,6 +111,8 @@ Authentication: JWT
 
 Cloud Hosting: AWS / Azure
 
+------------------------------------------------------------------------------------------------>
+
 Project Structure
 go-sharm/
 │
@@ -109,6 +122,8 @@ go-sharm/
 ├── backend/
 ├── database/
 └── README.md
+
+------------------------------------------------------------------------------------------------>
 
 Architecture Diagrams
 
@@ -130,10 +145,14 @@ Loyalty & rewards system
 
 Offline mode support
 
+------------------------------------------------------------------------------------------------>
+
 Contributor
 
 Seif Waleed Shalaby
 Frontend Developer
+
+------------------------------------------------------------------------------------------------>
 
 License
 
