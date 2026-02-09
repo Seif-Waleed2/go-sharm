@@ -24,6 +24,7 @@ Fragmented booking experiences across multiple platforms
 Limited access to real-time offers and local recommendations
 
 Service providers also lack a centralized digital platform to showcase their services.
+
 ------------------------------------------------------------------------------------------------>
 
 Solution
