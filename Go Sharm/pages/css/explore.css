@@ -22,6 +22,28 @@
     
       
         /* End Navbar */
+        /* start explore */
+        .card .card-img {
+            height: 400px;
+        }
+        .card .card-img-overlay h5.card-title{
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 15%;
+    letter-spacing: 3px;
+    word-spacing: 2;
+    font-size: 48px;
+}
+        .categories .col .card img {
+            
+        }
+
+
+
+
+
+        /* End explore */
+
 
 
 
