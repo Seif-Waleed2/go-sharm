@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Sharm | Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/imgs/Fav-icon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="../../assets/imgs/logo.svg" width="110">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <form class="mx-lg-auto my-3 my-lg-0">
+                    <div class="position-relative">
+                        <i class="bi bi-search search-icon"></i>
+                        <input class="form-control search-box ps-5" type="search" placeholder="Explore Sharm Elsheikh">
+                    </div>
+                </form>
+
+
+                <div class="nav-links ms-lg-auto text-center text-lg-start">
+                    <a href="explore.html" class="link-1 me-3 text-dark d-block d-lg-inline">
+                        <i class="bi bi-arrow-up-left-circle"></i>
+                        Explore</a>
+                    <a href="login.html" class="login-btn btn btn-primary me-2 my-2 my-lg-0">Login</a>
+                    <a href="signup.html" class="link-1 text-dark d-block d-lg-inline">Register</a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <!-- Tabs -->
+            <div class="hero-tabs mb-3">
+                <button class="btn btn-light active-tab" data-tab="ride">
+                    <i class="bi bi-car-front-fill"></i> Ride
+                </button>
+
+                <button class="btn btn-outline-light" data-tab="airport">
+                    <i class="bi bi-airplane"></i>
+                    Airport Pickup
+                </button>
+
+                <button class="btn btn-outline-light" data-tab="round">
+                    <i class="bi bi-arrow-left-right"></i> Round Trip
+                </button>
+
+                <a href="explore.html" class="btn btn-outline-light" data-tab="explore">
+                    <i class="bi bi-arrow-up-left-circle"></i> Explore Sharm
+                </a>
+
+                <a href="ai.html" class="btn btn-outline-light">
+                    <i class="bi bi-stars"></i> Plan My Vacation With Ai
+                </a>
+            </div>
+
+            <h2>Request A Ride</h2>
+            <p>Add your trip details, hop in, and go.</p>
+            <!--  FORMS CONTAINER  -->
+            <div class="forms-container">
+
+                <!--  Ride -->
+                <form class="ride-form tab-content active-form" id="ride">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Pickup Location" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Dropoff Location" required>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="datetime-local" class="form-control" required>
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-select">
+                                <option>1 Passenger</option>
+                                <option>2 Passengers</option>
+                                <option>4 Passengers</option>
+                                <option>6 Passengers</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="ride.html" class="btn btn-dark w-100">Request Ride</a>
+                        </div>
+                    </div>
+                </form>
+
+                <!--  Airport Pickup -->
+                <form class="ride-form tab-content" id="airport">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Flight Number" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Destination">
+                        </div>
+
+
+                        <div class="col-md-2">
+                            <input type="datetime-local" class="form-control" required>
+                        </div>
+                        <div class="col-md-2">
+                            <select class="form-select">
+                                <option>1 Passenger</option>
+                                <option>2 Passengers</option>
+                                <option>4 Passengers</option>
+                                <option>6 Passengers</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="ride.html" class="btn btn-dark w-100">Book Pickup</a>
+                        </div>
+                    </div>
+                </form>
+
+                <!--  Round Trip -->
+                <form class="ride-form tab-content" id="round">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Pickup Location">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Destination">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="Return Location">
+                        </div>
+
+                        <div class="col-md-2">
+                            <input type="datetime-local" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-1">
+                            <a href="ride.html" class="btn btn-dark w-100">Book</a>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+
+    </section>
+    <!--  TICKETS  -->
+    <section class="container my-5">
+        <h4 class="mb-4">Book your Tickets in best places</h4>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="ticket-card"> <img src="../../assets/imgs/Tajmahal.png">
+                    <div class="ticket-overlay">
+                        <h4>Friday Nights</h4>
+                        <p>Taj Mahal</p>
+                    </div>
+                </div>
+                <a href="booking.html" class="btn btn-outline-secondary w-100 mt-2"> Book Now
+                    <i class="bi bi-arrow-right-circle"></i>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <div class="ticket-card"> <img src="../../assets/imgs/Tajmahal.png">
+                    <div class="ticket-overlay">
+                        <h4>Friday Nights</h4>
+                        <p>Taj Mahal</p>
+                    </div>
+                </div>
+                <a href="booking.html" class="btn btn-outline-secondary w-100 mt-2"> Book Now
+                    <i class="bi bi-arrow-right-circle"></i>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <div class="ticket-card"> <img src="../../assets/imgs/Tajmahal.png">
+                    <div class="ticket-overlay">
+                        <h4>Friday Nights</h4>
+                        <p>Taj Mahal</p>
+                    </div>
+                </div>
+                <a href="booking.html" class="btn btn-outline-secondary w-100 mt-2"> Book Now
+                    <i class="bi bi-arrow-right-circle"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- POPULAR PLACES -->
+    <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4>Most Popular Places in Sharm Elsheikh</h4>
+            <a href="explore.html" class="see-all-link"> See all
+
+                <i class="bi bi-arrow-right-circle"></i> </a>
+        </div>
+        <div class="position-relative">
+
+            <!-- Left Arrow -->
+            <button class="scroll-btn left-btn" id="leftBtn">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <!--Scroll Container -->
+            <div class="popular-scroll" id="popularScroll">
+                <div class="place-card"> <img src="../../assets/imgs/Farsha.png">
+                    <div class="place-info"> <span class="category">Mountain Lounge</span>
+                        <h5>Farsha Cafe</h5>
+                    </div>
+                </div>
+                <div class="place-card"> <img src="../../assets/imgs/Soho Square.png">
+                    <div class="place-info"> <span class="category">Shopping & Nightlife</span>
+                        <h5>Soho Square</h5>
+                    </div>
+                </div>
+                <div class="place-card"> <img src="../../assets/imgs/Old Market.png">
+                    <div class="place-info"> <span class="category">Shopping</span>
+                        <h5>Old Market</h5>
+                    </div>
+                </div>
+                <div class="place-card"> <img src="../../assets/imgs/Old Market.png">
+                    <div class="place-info"> <span class="category">Shopping</span>
+                        <h5>Old Market</h5>
+                    </div>
+                </div>
+                <div class="place-card"> <img src="../../assets/imgs/Old Market.png">
+                    <div class="place-info"> <span class="category">Shopping</span>
+                        <h5>Old Market</h5>
+                    </div>
+                </div>
+                <div class="place-card"> <img src="../../assets/imgs/Old Market.png">
+                    <div class="place-info"> <span class="category">Shopping</span>
+                        <h5>Old Market</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Arrow -->
+            <button class="scroll-btn right-btn" id="rightBtn">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section py-5">
+        <div class="container text-center">
+
+            <h2 class="mb-4">Why Choose Go Sharm?</h2>
+            <p class="text-muted mb-5">Experience Sharm like never before with trusted services and seamless booking.
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="why-card">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h5>Easy Booking</h5>
+                        <p>Book rides and tours in seconds with our smart platform.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="why-card">
+                        <i class="bi bi-shield-lock"></i>
+                        <h5>Secure Payments</h5>
+                        <p>100% secure and protected payment methods.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="why-card">
+                        <i class="bi bi-geo-alt"></i>
+                        <h5>Local Experts</h5>
+                        <p>Professional local drivers and guides you can trust.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="why-card">
+                        <i class="bi bi-star"></i>
+                        <h5>Top Rated</h5>
+                        <p>Thousands of happy travelers every season.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Why Choose Us -->
+
+    <!-- CTA Section  -->
+    <section class="cta-section text-center text-white py-5">
+        <div class="container">
+            <h2 class="mb-3">Start Your Journey Today</h2>
+            <p class="mb-4">Book your ride or explore unforgettable experiences in Sharm El Sheikh.</p>
+            <a href="#" class="btn btn-light btn-lg px-4">Book Now</a>
+        </div>
+    </section>
+    <!-- End CTA Section -->
+
+
+    <!-- Start Testimonial -->
+    <section class="testimonials py-5">
+        <div class="container text-center">
+
+            <h2 class="mb-5">What Our Travelers Say</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Amazing experience! Booking was super easy and the driver was very professional."</p>
+                        <h6>Sarah M.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Best safari trip ever! Highly recommend Go Sharm to everyone visiting."</p>
+                        <h6>Ahmed R.</h6>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>"Smooth airport pickup and very friendly service and the driver was very professional."</p>
+                        <h6>Daniel K.</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Testimonial  -->
+
+
+
+
+    <!-- Start Footer -->
+    <footer class=" text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <img src="../../assets\imgs\logo.svg" alt="Logo" width="110" height="50"
+                        class="d-inline-block align-text-top">
+                    <p>
+                        Discover the best of Sharm El Sheikh with GoSharm. Explore top attractions, activities, and
+                        local culture in one place.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="explore.html" class="text-dark link-1">Explore</a></li>
+                        <li><a href="ai.html" class="text-dark link-1">Plan With Ai</a></li>
+                        <li><a href="profile.html" class="text-dark link-1">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-dark link-1">Email:gosharm@gmail.com</a></li>
+                        <li><a href="#!" class="text-dark link-1">Phone: +123 456 7890</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background: linear-gradient(135deg, #6f42c1, #4e73df);">
+            © 2023 Copyright:
+            <a class="text-dark link-1" href="#">GoSharm</a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        const tabs = document.querySelectorAll(".hero-tabs button");
+        const forms = document.querySelectorAll(".tab-content");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+
+
+                tabs.forEach(btn => {
+                    btn.classList.remove("active-tab");
+                    btn.classList.remove("btn-light");
+                    btn.classList.add("btn-outline-light");
+                });
+
+
+                tab.classList.add("active-tab");
+                tab.classList.remove("btn-outline-light");
+                tab.classList.add("btn-light");
+
+
+                forms.forEach(form => form.classList.remove("active-form"));
+
+
+                const selectedForm = document.getElementById(tab.dataset.tab);
+                if (selectedForm) {
+                    selectedForm.classList.add("active-form");
+                }
+            });
+        });
+
+
+        // Poular Places Scroll Function
+        function scrollPopular(direction) {
+            const container = document.getElementById("popularScroll");
+            const scrollAmount = 320;
+
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: "smooth"
+            });
+
+        }
+
+        const container = document.getElementById("popularScroll");
+        const leftBtn = document.getElementById("leftBtn");
+        const rightBtn = document.getElementById("rightBtn");
+        const scrollAmount = 320;
+
+        function updateArrows() {
+            const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+
+            if (maxScrollLeft <= 0) {
+                leftBtn.style.display = "none";
+                rightBtn.style.display = "none";
+                return;
+            }
+
+
+            if (container.scrollLeft <= 0) {
+                leftBtn.style.display = "none";
+            } else {
+                leftBtn.style.display = "flex";
+            }
+
+
+            if (container.scrollLeft >= maxScrollLeft - 5) {
+                rightBtn.style.display = "none";
+            } else {
+                rightBtn.style.display = "flex";
+            }
+        }
+
+        leftBtn.addEventListener("click", () => {
+            container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        });
+
+        rightBtn.addEventListener("click", () => {
+            container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+
+        container.addEventListener("scroll", updateArrows);
+        window.addEventListener("resize", updateArrows);
+
+        document.addEventListener("DOMContentLoaded", updateArrows);
+
+
+    </script>
+
+</body>
+
+</html>
