@@ -1,0 +1,21 @@
+body {
+        background: linear-gradient(135deg, #6f42c1, #4e73df);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .auth-card {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 15px;
+    }
+
+    .password-toggle {
+        cursor: pointer;
+    }
+
+    .social-btn {
+        border: 1px solid #ddd;
+    }

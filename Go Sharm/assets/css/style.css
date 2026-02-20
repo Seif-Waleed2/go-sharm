@@ -1,0 +1,396 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fc;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    padding: 15px 0;
+}
+
+.search-box{
+    width:400px;
+    border-radius:30px;
+    padding-left:45px;
+}
+
+.search-icon{
+    position:absolute;
+    top:50%;
+    left:15px;
+    transform:translateY(-50%);
+    color:#6c757d;
+    font-size:18px;
+}
+
+.link-1{
+    text-decoration:none !important;
+}
+
+
+.link-1:hover{
+    
+    color: #6f42c1 !important;
+    
+    
+}
+.login-btn{
+    background: linear-gradient(135deg, #6f42c1, #4e73df) !important;
+    padding: 5px 25px;
+     border-radius: 10px;
+    
+   
+}
+.login-btn:hover{
+    background: linear-gradient(135deg, #4e73df, #6f42c1) !important;
+    
+}
+
+
+
+
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #6f42c1, #4e73df);
+    color: white;
+    padding: 50px 0 60px;
+}
+
+.hero-tabs .btn {
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.hero h2 {
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.ride-form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+
+
+.ride-form input,
+.ride-form select {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* TICKETS */
+.ticket-card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.ticket-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.ticket-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+a.btn-outline-secondary {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+a.btn-outline-secondary:hover {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+}
+
+/* POPULAR */
+.see-all-link {
+    color: #6f42c1;
+    font-weight: 500;
+}
+/* Hide scrollbar */
+.popular-scroll{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    padding-bottom:10px;
+    scrollbar-width:none;
+}
+
+.popular-scroll::-webkit-scrollbar{
+    display:none;
+}
+
+/* Arrow Buttons */
+.scroll-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.scroll-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:white;
+    border:none;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    cursor:pointer;
+    z-index:10;
+    transition:0.3s;
+}
+
+.scroll-btn:hover{
+    background:#6f42c1;
+    color:white;
+}
+
+.left-btn{
+    left:-20px;
+}
+
+.right-btn{
+    right:-20px;
+}
+
+
+.popular-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.popular-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.popular-scroll::-webkit-scrollbar-thumb {
+    background: #6f42c1;
+    border-radius: 10px;
+}
+
+.place-card {
+    min-width: 280px;
+    height: 360px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.place-card:hover {
+    transform: scale(1.03);
+}
+
+.place-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.place-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.category {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* ================= TABS SYSTEM ================= */
+
+.tab-content{
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.active-form{
+    display: block;
+}
+
+.hero-tabs .btn{
+    transition: all 0.3s ease;
+}
+
+/* Active Tab Style */
+.active-tab{
+    background: #ffffff !important;
+    color: #6f42c1 !important;
+    border: none !important;
+    font-weight: 500;
+}
+
+/* Optional smoother look */
+.hero-tabs .btn-outline-light:hover{
+    background: rgba(255,255,255,0.15);
+}
+
+/* Fade animation */
+@keyframes fadeIn{
+    from{ opacity:0; transform: translateY(5px);}
+    to{ opacity:1; transform: translateY(0);}
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Search box responsive */
+@media (max-width: 992px){
+    .search-box{
+        width:100%;
+    }
+
+}
+
+
+/* Hero padding smaller */
+@media (max-width: 768px){
+    .hero{
+        padding:40px 0;
+    }
+}
+
+/* Hero Tabs Scrollable on Mobile */
+@media (max-width: 768px){
+    .hero-tabs{
+        display:flex;
+        overflow-x:auto;
+
+        gap:10px;
+        padding-bottom:10px;
+    }
+
+    .hero-tabs .btn{
+        white-space:nowrap;
+        flex-shrink:0;
+    }
+}
+
+/* Forms stack on mobile */
+@media (max-width: 768px){
+    .ride-form .col-md-3,
+    .ride-form .col-md-2,
+    .ride-form .col-md-4{
+        width:100%;
+    }
+}
+
+/* Tickets mobile */
+@media (max-width: 768px){
+    .ticket-card img{
+        height:200px;
+    }
+}
+
+/* Popular Cards mobile smaller */
+@media (max-width: 768px){
+    .place-card{
+        min-width:220px;
+        height:280px;
+    }
+}
+
+/* Why Choose Us */
+.why-section{
+    background:#ffffff;
+}
+
+.why-card{
+    background:#f8f9fc;
+    padding:30px 20px;
+    border-radius:15px;
+    transition:0.3s;
+    height:100%;
+}
+
+.why-card i{
+    font-size:40px;
+    color:#6f42c1;
+    margin-bottom:15px;
+}
+
+.why-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+/* End Why Choose Us */
+
+/* Start Testimonial */
+.testimonials{
+    background:#f8f9fc;
+}
+
+.testimonial-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-5px);
+}
+.testimonial-card p{
+    font-style:italic;
+    color:#6c757d;
+}
+
+/* End Testimonial */
+
+/* CTA */
+.cta-section{
+    background: linear-gradient(135deg,#6f42c1,#4e73df);
+}
+
+
+
+/* Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

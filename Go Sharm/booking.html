@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoSharm | Booking</title>
+             <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/imgs/Fav-icon.png" type="image/x-icon">
+    <!-- CSS -->
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/profile.css">
+     <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">
+      <img src="../../assets/imgs/logo.svg" width="110">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <form class="mx-lg-auto my-3 my-lg-0">
+  <div class="position-relative">
+    <i class="bi bi-search search-icon"></i>
+    <input class="form-control search-box ps-5" 
+           type="search" 
+           placeholder="Explore Sharm Elsheikh">
+  </div>
+</form>
+
+
+      <div class="nav-links ms-lg-auto text-center text-lg-start">
+        <a href="explore.html" class="link-1 me-3 text-dark d-block d-lg-inline">
+            <i class="bi bi-arrow-up-left-circle"></i>
+            Explore</a>
+       <a href="profile.html" class="link-1 me-3 text-dark d-block d-lg-inline">
+            <i class="bi bi-person-circle"></i>
+            Profile</a>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+<!-- End NAVBAR -->
+
+ <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-2 col-md-3 sidebar-col">
+                <div class="sidebar">
+                    <a href="#" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Profile</span>
+                    </a>
+                    
+                    <nav class="sidebar-nav mt-4">
+                        <a href="profile.html" class="nav-item">
+                            <i class="fas fa-route"></i>
+                            <span>Trips</span>
+                        </a>
+                        <a href="booking.html" class="nav-item active">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="account.html" class="nav-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Account</span>
+                        </a>
+                        <a href="#" class="nav-item logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-lg-7 col-md-9 main-content">
+                <div class="page-header">
+                    <h2>Upcoming Bookings</h2>
+                    <button class="btn-new-booking">
+                        <i class="fas fa-plus"></i>
+                        New Booking
+                    </button>
+                </div>
+
+                <!-- Booking Tabs -->
+                <div class="booking-tabs">
+                    <button class="tab-btn active" data-tab="upcoming">Upcoming</button>
+                    <button class="tab-btn" data-tab="completed">Completed</button>
+                    <button class="tab-btn" data-tab="cancelled">Cancelled</button>
+                </div>
+
+                <!-- Upcoming Bookings -->
+                <div class="bookings-list tab-content active" id="upcoming">
+                    <!-- Booking Card 1 -->
+                    <div class="booking-card upcoming-booking">
+                        <div class="booking-status">
+                            <span class="status-badge confirmed">Confirmed</span>
+                        </div>
+                        <div class="booking-header">
+                            <div class="booking-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="booking-main-info">
+                                <h4>Airport Transfer</h4>
+                                <p class="booking-date">
+                                    <i class="fas fa-calendar"></i>
+                                    Tomorrow, Feb 17 • 10:00 AM
+                                </p>
+                            </div>
+                            <div class="booking-price">
+                                <span class="price">$45</span>
+                            </div>
+                        </div>
+                        <div class="booking-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Pickup:</strong>
+                                    <span>Sharm El-Sheikh International Airport</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-location-dot"></i>
+                                <div>
+                                    <strong>Dropoff:</strong>
+                                    <span>Reef Oasis Beach Resort, Naama Bay</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <strong>Passengers:</strong>
+                                    <span>2 Adults</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-actions">
+                            <button class="btn-action secondary">
+                                <i class="fas fa-edit"></i>
+                                Modify
+                            </button>
+                            <button class="btn-action danger">
+                                <i class="fas fa-times"></i>
+                                Cancel
+                            </button>
+                            <button class="btn-action primary">
+                                <i class="fas fa-info-circle"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Booking Card 2 -->
+                    <div class="booking-card upcoming-booking">
+                        <div class="booking-status">
+                            <span class="status-badge pending">Pending</span>
+                        </div>
+                        <div class="booking-header">
+                            <div class="booking-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <div class="booking-main-info">
+                                <h4>Boat Trip - Ras Mohammed</h4>
+                                <p class="booking-date">
+                                    <i class="fas fa-calendar"></i>
+                                    Feb 20, 2026 • 8:00 AM
+                                </p>
+                            </div>
+                            <div class="booking-price">
+                                <span class="price">$120</span>
+                            </div>
+                        </div>
+                        <div class="booking-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Meeting Point:</strong>
+                                    <span>Naama Bay Marina</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duration:</strong>
+                                    <span>Full Day (8 hours)</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>Group Size:</strong>
+                                    <span>4 People</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-actions">
+                            <button class="btn-action secondary">
+                                <i class="fas fa-edit"></i>
+                                Modify
+                            </button>
+                            <button class="btn-action danger">
+                                <i class="fas fa-times"></i>
+                                Cancel
+                            </button>
+                            <button class="btn-action primary">
+                                <i class="fas fa-info-circle"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Booking Card 3 -->
+                    <div class="booking-card upcoming-booking">
+                        <div class="booking-status">
+                            <span class="status-badge confirmed">Confirmed</span>
+                        </div>
+                        <div class="booking-header">
+                            <div class="booking-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="booking-main-info">
+                                <h4>Restaurant Reservation</h4>
+                                <p class="booking-date">
+                                    <i class="fas fa-calendar"></i>
+                                    Feb 18, 2026 • 7:30 PM
+                                </p>
+                            </div>
+                            <div class="booking-price">
+                                <span class="price">Reserved</span>
+                            </div>
+                        </div>
+                        <div class="booking-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Location:</strong>
+                                    <span>Farsha Cafe, Old Market</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <strong>Party Size:</strong>
+                                    <span>2 People</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Contact:</strong>
+                                    <span>+20 123 456 7890</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking-actions">
+                            <button class="btn-action secondary">
+                                <i class="fas fa-edit"></i>
+                                Modify
+                            </button>
+                            <button class="btn-action danger">
+                                <i class="fas fa-times"></i>
+                                Cancel
+                            </button>
+                            <button class="btn-action primary">
+                                <i class="fas fa-info-circle"></i>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Completed Bookings -->
+                <div class="bookings-list tab-content" id="completed">
+                    <div class="empty-state">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>No Completed Bookings</h3>
+                        <p>Your completed bookings will appear here</p>
+                    </div>
+                </div>
+
+                <!-- Cancelled Bookings -->
+                <div class="bookings-list tab-content" id="cancelled">
+                    <div class="empty-state">
+                        <i class="fas fa-ban"></i>
+                        <h3>No Cancelled Bookings</h3>
+                        <p>Your cancelled bookings will appear here</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="booking-summary-card">
+                    <h4>Booking Summary</h4>
+                    <div class="summary-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Upcoming</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">0</div>
+                            <div class="stat-label">Cancelled</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-actions-card">
+                    <h4>Quick Actions</h4>
+                    <button class="quick-action-btn">
+                        <i class="fas fa-car"></i>
+                        <span>Book a Ride</span>
+                    </button>
+                    <button class="quick-action-btn">
+                        <i class="fas fa-ship"></i>
+                        <span>Book Excursion</span>
+                    </button>
+                    <button class="quick-action-btn">
+                        <i class="fas fa-utensils"></i>
+                        <span>Reserve Table</span>
+                    </button>
+                    <button class="quick-action-btn">
+                        <i class="fas fa-hotel"></i>
+                        <span>Book Hotel</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<!-- Start Footer -->
+<footer class=" text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <img src="../../assets\imgs\logo.svg" alt="Logo" width="110" height="50" class="d-inline-block align-text-top">
+        <p>
+          Discover the best of Sharm El Sheikh with GoSharm. Explore top attractions, activities, and local culture in one place.
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="explore.html" class="text-dark">Explore</a></li>
+          <li><a href="ai.html" class="text-dark">Plan With Ai</a></li>
+          <li><a href="profile.html" class="text-dark">Profile</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact Us</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#!" class="text-dark">Email:gosharm@gmail.com</a></li>
+            <li><a href="#!" class="text-dark">Phone: +123 456 7890</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="text-center p-3" style="background: linear-gradient(135deg, #6f42c1, #4e73df);">
+      © 2023 Copyright:
+      <a class="text-dark" href="#">GoSharm</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="assets/js/profile.js"></script>
+    
+</body>
+</html>
