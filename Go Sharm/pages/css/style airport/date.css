@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #3d31c2; 
+    --text-dark: #1a1a2e;
+    --text-light: #9fa5b0;
+    --bg-gray: #f8f9fa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.web-container {
+    width: 100%;
+    max-width:100%; 
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.calendar-header h1 {
+    font-size: 22px;
+    color: var(--text-dark);
+}
+
+.month-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.current-date {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #444;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.day-name {
+    font-weight: 600;
+    color: var(--text-dark);
+    padding-bottom: 10px;
+}
+
+.day {
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.day:hover:not(.selected) {
+    background-color: #eee;
+}
+
+.prev-month {
+    color: var(--text-light);
+}
+
+.selected {
+    background-color: var(--primary-color);
+    color: #fff !important;
+}
+
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.confirm-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
