@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoSharm | Profile</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/imgs/Fav-icon.png" type="image/x-icon">
+    <!-- CSS -->
+     <link rel="stylesheet" href="../../pages/css/style.css">
+     <link rel="stylesheet" href="assets/css/profile.css">
+     <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+</head>
+<body>
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+  <div class="container">
+
+    <a class="navbar-brand" href="index.html">
+      <img src="../../assets/imgs/logo.svg" width="110">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <form class="mx-lg-auto my-3 my-lg-0">
+  <div class="position-relative">
+    <i class="bi bi-search search-icon"></i>
+    <input class="form-control search-box ps-5" 
+           type="search" 
+           placeholder="Explore Sharm Elsheikh">
+  </div>
+</form>
+
+
+      <div class="nav-links ms-lg-auto text-center text-lg-start">
+        <a href="explore.html" class="link-1 me-3 text-dark d-block d-lg-inline">
+            <i class="bi bi-arrow-up-left-circle"></i>
+            Explore</a>
+       <a href="profile.html" class="link-1 me-3 text-dark d-block d-lg-inline">
+            <i class="bi bi-person-circle"></i>
+            Profile</a>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+<!-- End NAVBAR -->
+
+
+
+
+<!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-2 col-md-3 sidebar-col">
+                <div class="sidebar">
+                    <a href="index.html" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Profile</span>
+                    </a>
+                    
+                    <nav class="sidebar-nav mt-4">
+                        <a href="profile.html" class="nav-item active">
+                            <i class="fas fa-route"></i>
+                            <span>Trips</span>
+                        </a>
+                        <a href="booking.html" class="nav-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Booking</span>
+                        </a>
+                        <a href="account.html" class="nav-item">
+                            <i class="fas fa-user"></i>
+                            <span>My Account</span>
+                        </a>
+                        <a href="#" class="nav-item logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-lg-7 col-md-9 main-content">
+                <div class="trips-header">
+                    <h2>Trips</h2>
+                    <div class="filters">
+                        <button class="filter-btn">
+                            All Trips
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <button class="filter-btn">
+                            Last 3 Months
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Trip Cards -->
+                <div class="trips-list">
+                    <!-- Trip 1 -->
+                    <div class="trip-card">
+                        <div class="trip-date">Friday, 12 January</div>
+                        <div class="trip-content">
+                            <div class="trip-map">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.123!2d34.3299!3d27.9158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDU0JzU2LjkiTiAzNMKwMTknNDcuNiJF!5e0!3m2!1sen!2seg!4v1234567890"
+                                    width="100%" 
+                                    height="150" 
+                                    style="border:0; border-radius: 8px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            <div class="trip-details">
+                                <div class="trip-info">
+                                    <h5>Farcha Cafe, Elhadaba, Old Market</h5>
+                                    <p class="trip-meta">
+                                        <span>Ride</span>
+                                        <span class="separator">•</span>
+                                        <span>2:19 am</span>
+                                        <span class="separator">•</span>
+                                        <span>18.3 km</span>
+                                    </p>
+                                </div>
+                                <div class="trip-price">$ 20</div>
+                            </div>
+                            <div class="trip-actions">
+                                <button class="btn-details">
+                                    <i class="fas fa-list"></i>
+                                    Details
+                                </button>
+                                <button class="btn-rebook">
+                                    <i class="fas fa-redo"></i>
+                                    Rebook
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trip 2 -->
+                    <div class="trip-card">
+                        <div class="trip-date">Friday, 12 January</div>
+                        <div class="trip-content">
+                            <div class="trip-map">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.456!2d34.3499!3d27.9258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDU1JzMyLjkiTiAzNMKwMjAnNTkuNiJF!5e0!3m2!1sen!2seg!4v1234567891"
+                                    width="100%" 
+                                    height="150" 
+                                    style="border:0; border-radius: 8px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            <div class="trip-details">
+                                <div class="trip-info">
+                                    <h5>Namma Bay Market, Naqa, Sharm Elsheikh</h5>
+                                    <p class="trip-meta">
+                                        <span>Ride</span>
+                                        <span class="separator">•</span>
+                                        <span>2:19 am</span>
+                                        <span class="separator">•</span>
+                                        <span>18.3 km</span>
+                                    </p>
+                                </div>
+                                <div class="trip-price">$ 15</div>
+                            </div>
+                            <div class="trip-actions">
+                                <button class="btn-details">
+                                    <i class="fas fa-list"></i>
+                                    Details
+                                </button>
+                                <button class="btn-rebook">
+                                    <i class="fas fa-redo"></i>
+                                    Rebook
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trip 3 -->
+                    <div class="trip-card">
+                        <div class="trip-date">Friday, 12 January</div>
+                        <div class="trip-content">
+                            <div class="trip-map">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.789!2d34.3699!3d27.9358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDU2JzA4LjkiTiAzNMKwMjInMTEuNiJF!5e0!3m2!1sen!2seg!4v1234567892"
+                                    width="100%" 
+                                    height="150" 
+                                    style="border:0; border-radius: 8px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            <div class="trip-details">
+                                <div class="trip-info">
+                                    <h5>Reef Oasis Beach Resort, Elhadaba, Old Market</h5>
+                                    <p class="trip-meta">
+                                        <span>airport pickup</span>
+                                        <span class="separator">•</span>
+                                        <span>2:19 am</span>
+                                        <span class="separator">•</span>
+                                        <span>18.3 km</span>
+                                    </p>
+                                </div>
+                                <div class="trip-price">$ 35</div>
+                            </div>
+                            <div class="trip-actions">
+                                <button class="btn-details">
+                                    <i class="fas fa-list"></i>
+                                    Details
+                                </button>
+                                <button class="btn-rebook">
+                                    <i class="fas fa-redo"></i>
+                                    Rebook
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="promo-card">
+                    <div class="promo-illustration">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&h=300&fit=crop" alt="Beach scene">
+                    </div>
+                    <div class="promo-content">
+                        <h4>Get A Ride In Just 1 Minute!</h4>
+                        <p>Need A Ride Fast? Tap, Book, And Go. Your Driver Arrives In Just 1 Minute.</p>
+                        <button class="btn-request-ride">Request A Ride</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<!-- Start Footer -->
+<footer class=" text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <img src="../../assets\imgs\logo.svg" alt="Logo" width="110" height="50" class="d-inline-block align-text-top">
+        <p>
+          Discover the best of Sharm El Sheikh with GoSharm. Explore top attractions, activities, and local culture in one place.
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="explore.html" class="text-dark">Explore</a></li>
+          <li><a href="ai.html" class="text-dark">Plan With Ai</a></li>
+          <li><a href="profile.html" class="text-dark">Profile</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Contact Us</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#!" class="text-dark">Email:gosharm@gmail.com</a></li>
+            <li><a href="#!" class="text-dark">Phone: +123 456 7890</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="text-center p-3" style="background: linear-gradient(135deg, #6f42c1, #4e73df);">
+      © 2023 Copyright:
+      <a class="text-dark" href="#">GoSharm</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="assets/js/profile.js"></script>
+</body>
+</html>
