@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   let currentStep = 1;
 
   const panels = document.querySelectorAll(".step-panel");
@@ -19,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // =============================
 
   function updateStepUI() {
-    panels.forEach(panel => panel.classList.remove("active"));
-    steps.forEach(step => step.classList.remove("active"));
+    panels.forEach((panel) => panel.classList.remove("active"));
+    steps.forEach((step) => step.classList.remove("active"));
 
     panels[currentStep - 1].classList.add("active");
     steps[currentStep - 1].classList.add("active");
@@ -48,20 +47,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateStepUI();
 
-
   // =============================
   // TRIP TYPE SELECTION
   // =============================
 
   const tripCards = document.querySelectorAll(".trip-card");
 
-  tripCards.forEach(card => {
+  tripCards.forEach((card) => {
     card.addEventListener("click", function () {
-      tripCards.forEach(c => c.classList.remove("active"));
+      tripCards.forEach((c) => c.classList.remove("active"));
       this.classList.add("active");
     });
   });
-
 
   // =============================
   // INTEREST TAGS SELECTION
@@ -69,21 +66,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const tags = document.querySelectorAll(".tag");
 
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     tag.addEventListener("click", function () {
       this.classList.toggle("active");
     });
   });
-
 
   // =============================
   // AI PLAN GENERATOR
   // =============================
 
   function generatePlan() {
-
     if (!aiWrapper || !aiLoading || !aiResult) {
-      console.error("Missing required elements (.ai-wrapper, .ai-loading, .ai-result)");
+      console.error(
+        "Missing required elements (.ai-wrapper, .ai-loading, .ai-result)",
+      );
       return;
     }
 
@@ -91,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
     aiLoading.classList.remove("d-none");
 
     setTimeout(() => {
-
       aiLoading.classList.add("d-none");
       aiResult.classList.remove("d-none");
 
@@ -119,8 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
           <p>Sea Beach Aqua Park</p>
         </div>
       `;
-
     }, 1500);
   }
-
 });

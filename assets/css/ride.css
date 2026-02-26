@@ -2,6 +2,7 @@ body {
   background: #f8f8fb;
   font-family: 'Segoe UI', sans-serif;
 }
+
 a.back-link {
   text-decoration: none;
   color: #333;
@@ -9,6 +10,7 @@ a.back-link {
   align-items: center;
   gap: 5px;
 }
+
 a.back-link:hover {
   color: #6f42c1;
 }
@@ -52,19 +54,21 @@ a.back-link:hover {
   border: 2px solid #6f42c1;
   background: #f8f3ff;
 }
-.ride-info{
-    margin-top: 20px;
-    
+
+.ride-info {
+  margin-top: 20px;
+
 }
-.vip{
-    color: #efc300;
+
+.vip {
+  color: #efc300;
 }
 
 .form-select {
   border: none;
   padding: 12px;
   border-radius: 10px;
-  
+
 }
 
 
@@ -86,8 +90,8 @@ iframe {
 
 
 /* RESPONSIVE */
-@media(max-width: 992px){
-  .map-box img{
+@media(max-width: 992px) {
+  .map-box img {
     height: 400px;
   }
 }
